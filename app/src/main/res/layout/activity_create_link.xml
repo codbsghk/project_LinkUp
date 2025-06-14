@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="24dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="모임 만들기"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginBottom="24dp" />
+
+        <!-- 모임명 입력 -->
+        <EditText
+            android:id="@+id/editLinkName"
+            android:hint="모임 명"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp" />
+
+        <!-- 만남 횟수 선택 -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="만남 횟수"
+            android:textStyle="bold" />
+
+        <RadioGroup
+            android:id="@+id/radioMeetingCount"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp">
+
+            <RadioButton
+                android:id="@+id/radioOnce"
+                android:text="한번만 볼래요"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <RadioButton
+                android:id="@+id/radioMultiple"
+                android:text="여러번 볼래요"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp" />
+        </RadioGroup>
+
+        <!-- 가입 조건 체크박스 -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="가입 조건"
+            android:textStyle="bold" />
+
+        <CheckBox
+            android:id="@+id/checkNone"
+            android:text="조건 없음"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <CheckBox
+            android:id="@+id/checkPassword"
+            android:text="비밀번호"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <!-- 모임 소개 -->
+        <EditText
+            android:id="@+id/editIntro"
+            android:hint="모임 소개"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:gravity="top"
+            android:background="@android:drawable/editbox_background_normal"
+            android:layout_marginBottom="24dp" />
+
+        <!-- 만들기 버튼 -->
+        <Button
+            android:id="@+id/btnCreateLink"
+            android:text="만들기"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#20C997"
+            android:textColor="@android:color/white" />
+
+        <Button
+            android:id="@+id/btnGoHome"
+            android:text="홈으로"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#ADB5BD"
+            android:textColor="@android:color/white" />
+
+    </LinearLayout>
+</ScrollView>

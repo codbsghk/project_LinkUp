@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/menu_go_home"
+        android:icon="@drawable/ic_home"
+        android:title="홈으로 이동" />
+
+    <item
+        android:id="@+id/menu_member_list"
+        android:title="모임원 목록" />
+    <item
+        android:id="@+id/menu_setting"
+        android:title="설정" />
+    <item
+        android:id="@+id/menu_delete"
+        android:title="모임 삭제하기" />
+    <item
+        android:id="@+id/menu_eval"
+        android:title="모임 평가하기" />
+</menu>

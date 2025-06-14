@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+    <!-- 홈으로 돌아가기 버튼 -->
+    <Button
+        android:id="@+id/btnGoHome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="← 홈으로"
+        android:layout_gravity="start"
+        android:textColor="@android:color/white"
+        android:backgroundTint="#ADB5BD"
+        android:layout_marginBottom="16dp" />
+
+    <!-- 신고자 이름 -->
+    <EditText
+        android:id="@+id/editReporter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="신고자 이름"
+        android:background="@android:drawable/editbox_background"
+        android:padding="12dp"
+        android:layout_marginBottom="12dp" />
+
+    <!-- 신고 사유 -->
+    <EditText
+        android:id="@+id/editReason"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:hint="신고 사유를 입력하세요"
+        android:gravity="top"
+        android:background="@android:drawable/editbox_background"
+        android:padding="12dp"
+        android:layout_marginBottom="16dp" />
+
+    <!-- 접수 버튼 -->
+    <Button
+        android:id="@+id/btnSubmitReport"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="접수하기"
+        android:textColor="@android:color/white"
+        android:backgroundTint="#FF6B6B" />
+</LinearLayout>

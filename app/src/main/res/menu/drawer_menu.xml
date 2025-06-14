@@ -1,0 +1,22 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/menu_logout"
+        android:title="로그아웃"
+        android:icon="@android:drawable/ic_lock_power_off"/>
+    <item
+        android:id="@+id/menu_withdraw"
+        android:title="회원 탈퇴"
+        android:icon="@android:drawable/ic_menu_delete"/>
+
+    <item
+        android:id="@+id/menu_friends"
+        android:title="친구 목록"
+        android:icon="@android:drawable/ic_menu_myplaces" />
+
+    <item
+        android:id="@+id/menu_report"
+        android:title="신고 접수하기"
+        android:icon="@android:drawable/ic_menu_info_details" />
+
+</menu>
